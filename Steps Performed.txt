@@ -1,0 +1,16 @@
+1. created an Ec2 instance.
+2. Attached EBS volume
+3. Updated with following
+	#update machine
+	sudo yum update -y
+	#install java8
+	sudo yum install -y java-1.8.0-openjdx-devel
+	#set java to defaults
+	sudo usr/sbin/alternatives -config java
+	sudo usr/sbin/alternatives -config javac
+	#verify version
+	java -version
+4. Created Private AMI (using GUI)
+5. Updated another software using public code and created another AMI
+6. Ran the script AwsAuth.sh
+

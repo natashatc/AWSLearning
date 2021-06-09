@@ -7,3 +7,4 @@ echo Please enter tag1
 read tag1
 echo Please enter tag2
 read tag2
+git diff $tag1 ~count $tag2 --name-only
